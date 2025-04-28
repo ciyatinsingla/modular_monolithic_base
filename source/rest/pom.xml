@@ -10,7 +10,40 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>rest</artifactId>
     <name>Rest</name>
-    <dependencies>
+    <packaging>jar</packaging>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/config/${environment.name}</directory>
+                <includes>
+                    <include>application.properties</include>
+                    <!--                    <include>quartz.properties</include>-->
+                    <!--                    <include>log4j2.xml</include>-->
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.monolithic.rest.ModularMonolithicArchitectureSampleProjectApplication</mainClass>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
 
-    </dependencies>
+
+        </plugins>
+    </build>
 </project>
