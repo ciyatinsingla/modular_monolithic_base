@@ -44,7 +44,7 @@ source/model/target
 source/rest/target
 source/rest/target/*
 source/business/business.iml
-source/shyftclub.iml
+source/monolithic.iml
 source/dto/dto.iml
 source/model/model.iml
 source/rest/rest.iml
@@ -52,10 +52,6 @@ source/service/service.iml
 certificates
 dependencies
 logs
-source/pictures/users/48/bookings/5/passports/235355/JPEG_20171205_15480516329367321000038408.jpg
-source/pictures/users/18/booking/RIDAZAIDI.PNG
-source/pictures/users/RIDAZAIDI.PNG
-source/pictures/users/19/booking/RIDAZAIDI.PNG
 .classpath
 .project
 .settings
